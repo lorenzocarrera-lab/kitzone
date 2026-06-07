@@ -249,15 +249,15 @@ function renderCart() {
 /* ═══════════════════════════════════════════
    PAYPAL
 ════════════════════════════════════════════ */
-let _ppTotal = null;
 function initPayPal(total) {
-  if (typeof paypal === 'undefined') return;
-  if (total === _ppTotal && paypalMounted) return;
-  _ppTotal = total;
-  paypalMounted = false;
-
   const container = document.getElementById('paypal-button-container');
   container.innerHTML = '';
+
+  if (typeof paypal === 'undefined') {
+    container.innerHTML = '<p style="color:#f59e0b;font-size:.8rem;text-align:center">Caricamento PayPal...</p>';
+    setTimeout(() => initPayPal(total), 1500);
+    return;
+  }
 
   paypal.Buttons({
     createOrder(data, actions) {
@@ -274,9 +274,12 @@ function initPayPal(total) {
         cart = []; renderCart(); toggleCart();
       });
     },
-    onError(err) { console.error(err); showToast('⚠️ Errore pagamento. Riprova.', true); },
-    style: { layout: 'horizontal', color: 'gold', shape: 'rect', label: 'pay', tagline: false, height: 44 }
-  }).render('#paypal-button-container').then(() => { paypalMounted = true; });
+    onError(err) {
+      console.error(err);
+      showToast('⚠️ Errore pagamento. Riprova.', true);
+    },
+    style: { layout: 'vertical', color: 'gold', shape: 'rect', label: 'pay', tagline: false, height: 45 }
+  }).render('#paypal-button-container');
 }
 
 /* ═══════════════════════════════════════════
