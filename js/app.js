@@ -171,7 +171,7 @@ function addToCart() {
 
   const name = document.getElementById('ctrl-name').value.trim().toUpperCase() || '—';
   const num  = document.getElementById('ctrl-number').value || '10';
-  const price = 39.99;
+  const price = 1.00;
 
   cart.push({
     id:    Date.now(),
