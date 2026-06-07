@@ -1,0 +1,98 @@
+════════════════════════════════════════════════════
+  GUIDA PER AGGIUNGERE LE IMMAGINI DELLE MAGLIE
+════════════════════════════════════════════════════
+
+Scarica le foto da: https://vexokit.x.yupoo.com
+e salvale nelle cartelle con ESATTAMENTE questi nomi:
+
+━━━━━━━━━━━━━━━━━━━━━━
+  HERO (3 immagini grandi per la homepage)
+━━━━━━━━━━━━━━━━━━━━━━
+images/hero-main.jpg        ← maglia principale (es. Italia home)
+images/hero-side.jpg        ← seconda maglia (es. Argentina home)
+images/hero-side2.jpg       ← terza maglia (es. Brasile home)
+images/mondiali-bg.jpg      ← sfondo sezione Mondiali (qualsiasi foto atmosferica)
+
+━━━━━━━━━━━━━━━━━━━━━━
+  MONDIALI 2026
+━━━━━━━━━━━━━━━━━━━━━━
+images/mondiali/italia-home.jpg
+images/mondiali/italia-away.jpg
+images/mondiali/argentina-home.jpg
+images/mondiali/brasile-home.jpg
+images/mondiali/brasile-away.jpg
+images/mondiali/francia-home.jpg
+images/mondiali/spagna-home.jpg
+images/mondiali/germania-home.jpg
+images/mondiali/portogallo-home.jpg
+images/mondiali/inghilterra-home.jpg
+images/mondiali/inghilterra-away.jpg
+images/mondiali/usa-home.jpg
+images/mondiali/marocco-home.jpg
+images/mondiali/giappone-home.jpg
+images/mondiali/messico-home.jpg
+
+━━━━━━━━━━━━━━━━━━━━━━
+  SERIE A 2025/26
+━━━━━━━━━━━━━━━━━━━━━━
+images/seriea/inter-home.jpg
+images/seriea/inter-away.jpg
+images/seriea/milan-home.jpg
+images/seriea/milan-away.jpg
+images/seriea/juventus-home.jpg
+images/seriea/juventus-away.jpg
+images/seriea/napoli-home.jpg
+images/seriea/roma-home.jpg
+images/seriea/lazio-home.jpg
+images/seriea/atalanta-home.jpg
+images/seriea/fiorentina-home.jpg
+images/seriea/torino-home.jpg
+
+━━━━━━━━━━━━━━━━━━━━━━
+  CHAMPIONS / TOP CLUB
+━━━━━━━━━━━━━━━━━━━━━━
+images/champions/realmadrid-home.jpg
+images/champions/realmadrid-away.jpg
+images/champions/barcelona-home.jpg
+images/champions/psg-home.jpg
+images/champions/mancity-home.jpg
+images/champions/liverpool-home.jpg
+images/champions/arsenal-home.jpg
+images/champions/chelsea-home.jpg
+
+━━━━━━━━━━━━━━━━━━━━━━
+  PREMIER LEAGUE
+━━━━━━━━━━━━━━━━━━━━━━
+images/premier/liverpool-home.jpg
+images/premier/arsenal-home.jpg
+images/premier/mancity-home.jpg
+images/premier/chelsea-home.jpg
+images/premier/manutd-home.jpg
+images/premier/tottenham-home.jpg
+
+━━━━━━━━━━━━━━━━━━━━━━
+  LA LIGA
+━━━━━━━━━━━━━━━━━━━━━━
+images/laliga/realmadrid-home.jpg
+images/laliga/barcelona-home.jpg
+images/laliga/atletico-home.jpg
+images/laliga/sevilla-home.jpg
+
+━━━━━━━━━━━━━━━━━━━━━━
+  BUNDESLIGA
+━━━━━━━━━━━━━━━━━━━━━━
+images/bundesliga/bayernmunich-home.jpg
+images/bundesliga/dortmund-home.jpg
+images/bundesliga/leverkusen-home.jpg
+images/bundesliga/leipzig-home.jpg
+
+━━━━━━━━━━━━━━━━━━━━━━
+  NOTE IMPORTANTI
+━━━━━━━━━━━━━━━━━━━━━━
+• Formato consigliato: JPG o WebP
+• Dimensione ideale: 600x700px o simile (verticale)
+• Se il file non esiste, il sito mostra automaticamente
+  una versione SVG colorata al posto dell'immagine
+• Puoi aggiungere le immagini una alla volta:
+  il sito funziona anche senza tutte le foto
+════════════════════════════════════════════════════

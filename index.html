@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KitZone — Maglie Calcio Personalizzate</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">KIT<span>ZONE</span></a>
+    <nav class="nav-links">
+      <a href="#catalogo">Catalogo</a>
+      <a href="#mondiali">Mondiali 2026</a>
+      <a href="#personalizza">Personalizza</a>
+      <a href="#come-funziona">Come funziona</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#personalizza" class="btn btn-sm btn-primary">Personalizza ora</a>
+      <div class="nav-cart" onclick="toggleCart()">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span id="cart-count" class="cart-badge">0</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-grid-overlay"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Mondiali 2026 · Serie A · Champions League
+      </div>
+      <h1>
+        La tua maglia.<br/>
+        <span class="hero-accent">Il tuo nome.</span><br/>
+        Il tuo numero.
+      </h1>
+      <p class="hero-desc">Oltre 50 squadre disponibili. Personalizzazione nome e numero inclusa nel prezzo. Spedizione in tutta Italia.</p>
+      <div class="hero-actions">
+        <a href="#catalogo" class="btn btn-primary btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Sfoglia il catalogo
+        </a>
+        <a href="#personalizza" class="btn btn-ghost btn-lg">Personalizza →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>50+</strong><span>Squadre</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><strong>7–12gg</strong><span>Consegna</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><strong>€39,99</strong><span>Da</span></div>
+      </div>
+    </div>
+    <div class="hero-images">
+      <div class="hero-jersey hero-jersey--main">
+        <img src="images/hero-main.jpg" alt="Maglia principale" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder" style="display:none">
+          <span>hero-main.jpg</span>
+        </div>
+        <div class="hero-badge-img">🏆 Bestseller</div>
+      </div>
+      <div class="hero-jersey hero-jersey--side">
+        <img src="images/hero-side.jpg" alt="Maglia secondaria" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder" style="display:none">
+          <span>hero-side.jpg</span>
+        </div>
+      </div>
+      <div class="hero-jersey hero-jersey--side2">
+        <img src="images/hero-side2.jpg" alt="Maglia terza" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder" style="display:none">
+          <span>hero-side2.jpg</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scorri</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TRUST BAR
+════════════════════════════════════════════ -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      Spedizione gratuita sopra €60
+    </div>
+    <div class="trust-sep">·</div>
+    <div class="trust-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Personalizzazione inclusa
+    </div>
+    <div class="trust-sep">·</div>
+    <div class="trust-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      Pagamento sicuro PayPal
+    </div>
+    <div class="trust-sep">·</div>
+    <div class="trust-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Supporto WhatsApp
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     FILTRI CATEGORIE
+════════════════════════════════════════════ -->
+<section class="filters-section" id="catalogo">
+  <div class="container">
+    <div class="filters-header">
+      <h2 class="section-title">Catalogo Maglie</h2>
+      <div class="filters-pills">
+        <button class="pill active" onclick="filterCat(this,'tutti')">Tutti</button>
+        <button class="pill" onclick="filterCat(this,'mondiali')">🌍 Mondiali 2026</button>
+        <button class="pill" onclick="filterCat(this,'serie-a')">🇮🇹 Serie A</button>
+        <button class="pill" onclick="filterCat(this,'champions')">⭐ Champions</button>
+        <button class="pill" onclick="filterCat(this,'premier')">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier</button>
+        <button class="pill" onclick="filterCat(this,'laliga')">🇪🇸 La Liga</button>
+        <button class="pill" onclick="filterCat(this,'bundesliga')">🇩🇪 Bundesliga</button>
+      </div>
+    </div>
+    <div class="products-grid" id="products-grid"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     BANNER MONDIALI
+════════════════════════════════════════════ -->
+<section class="mondiali-section" id="mondiali">
+  <div class="mondiali-bg">
+    <img src="images/mondiali-bg.jpg" alt="Mondiali 2026" onerror="this.style.display='none'"/>
+  </div>
+  <div class="mondiali-overlay"></div>
+  <div class="container mondiali-content">
+    <div class="mondiali-left">
+      <div class="mondiali-tag">⚽ Esclusiva 2026</div>
+      <h2>Mondiali<br/><span>USA · Canada · Messico</span></h2>
+      <p>Tutte le nazionali partecipanti. Home, away e third kit. Personalizza con il tuo nome e il tuo numero preferito.</p>
+      <button class="btn btn-primary btn-lg" onclick="filterCat(document.querySelector('.pill'),'mondiali');document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})">
+        Vedi tutte le nazionali →
+      </button>
+    </div>
+    <div class="mondiali-flags">
+      <div class="flags-grid">
+        <div class="flag-card"><span>🇮🇹</span><small>Italia</small></div>
+        <div class="flag-card"><span>🇧🇷</span><small>Brasile</small></div>
+        <div class="flag-card"><span>🇦🇷</span><small>Argentina</small></div>
+        <div class="flag-card"><span>🇫🇷</span><small>Francia</small></div>
+        <div class="flag-card"><span>🇪🇸</span><small>Spagna</small></div>
+        <div class="flag-card"><span>🇩🇪</span><small>Germania</small></div>
+        <div class="flag-card"><span>🇵🇹</span><small>Portogallo</small></div>
+        <div class="flag-card"><span>🏴󠁧󠁢󠁥󠁮󠁧󠁿</span><small>Inghilterra</small></div>
+        <div class="flag-card"><span>🇺🇸</span><small>USA</small></div>
+        <div class="flag-card"><span>🇲🇦</span><small>Marocco</small></div>
+        <div class="flag-card"><span>🇯🇵</span><small>Giappone</small></div>
+        <div class="flag-card"><span>🇲🇽</span><small>Messico</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PERSONALIZZATORE
+════════════════════════════════════════════ -->
+<section class="customizer-section" id="personalizza">
+  <div class="container">
+    <div class="customizer-header">
+      <h2 class="section-title">Personalizza la tua maglia</h2>
+      <p>Scegli squadra, colore, taglia — inserisci nome e numero. Ordina in 2 minuti.</p>
+    </div>
+
+    <div class="customizer-grid">
+
+      <!-- Preview -->
+      <div class="customizer-preview-col">
+        <div class="preview-card">
+          <div class="preview-tabs">
+            <button class="preview-tab active" onclick="switchPreview(this,'front')">Fronte</button>
+            <button class="preview-tab" onclick="switchPreview(this,'back')">Retro</button>
+          </div>
+          <div class="preview-img-wrap" id="preview-front">
+            <img id="preview-front-img" src="" alt="Anteprima maglia" style="display:none"/>
+            <div class="preview-svg-wrap" id="preview-svg-front">
+              <!-- SVG jersey fronte -->
+              <svg viewBox="0 0 200 230" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="jGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" id="jStop1" style="stop-color:#1a56db"/>
+                    <stop offset="100%" id="jStop2" style="stop-color:#0e3a8c"/>
+                  </linearGradient>
+                  <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.4)"/></filter>
+                </defs>
+                <path d="M65,22 L18,55 L8,100 L42,106 L42,210 L158,210 L158,106 L192,100 L182,55 L135,22 L118,38 Q100,55 82,38 Z"
+                      fill="url(#jGrad)" id="j-body" filter="url(#shadow)"/>
+                <!-- Colletto -->
+                <path d="M82,38 Q100,58 118,38" fill="none" stroke-width="4" id="j-collar" stroke="#0a2d70"/>
+                <!-- Stemma area -->
+                <circle cx="75" cy="80" r="12" fill="rgba(255,255,255,0.12)" id="j-badge-area"/>
+                <!-- Numero -->
+                <text id="prev-num" x="100" y="152" text-anchor="middle" font-family="Bebas Neue,sans-serif" font-size="56" fill="white" opacity="0.95">10</text>
+              </svg>
+            </div>
+            <div class="preview-team-badge" id="preview-team-name">Seleziona squadra</div>
+          </div>
+          <div class="preview-img-wrap" id="preview-back" style="display:none">
+            <div class="preview-svg-wrap">
+              <svg viewBox="0 0 200 230" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="jGradB" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" id="jStop1B" style="stop-color:#1a56db"/>
+                    <stop offset="100%" id="jStop2B" style="stop-color:#0e3a8c"/>
+                  </linearGradient>
+                </defs>
+                <path d="M65,22 L18,55 L8,100 L42,106 L42,210 L158,210 L158,106 L192,100 L182,55 L135,22 L118,38 Q100,55 82,38 Z"
+                      fill="url(#jGradB)" id="j-body-b" filter="url(#shadow)"/>
+                <path d="M82,38 Q100,58 118,38" fill="none" stroke-width="4" id="j-collar-b" stroke="#0a2d70"/>
+                <!-- Nome retro -->
+                <text id="prev-name-b" x="100" y="95" text-anchor="middle" font-family="Bebas Neue,sans-serif" font-size="18" fill="white" opacity="0.9" letter-spacing="4">IL TUO NOME</text>
+                <!-- Numero retro -->
+                <text id="prev-num-b" x="100" y="165" text-anchor="middle" font-family="Bebas Neue,sans-serif" font-size="72" fill="white" opacity="0.95">10</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controlli -->
+      <div class="customizer-controls-col">
+
+        <div class="ctrl-section">
+          <div class="ctrl-label">1 · Scegli la squadra</div>
+          <select id="ctrl-team" onchange="onTeamChange()">
+            <option value="">— Seleziona —</option>
+            <optgroup label="🌍 Mondiali 2026">
+              <option value="italia-h"   data-c1="#003087" data-c2="#001f5e" data-s="#001040" data-img="mondiali/italia-home.jpg">🇮🇹 Italia — Home</option>
+              <option value="italia-a"   data-c1="#f0f0f0" data-c2="#dde8f8" data-s="#aaaaaa" data-img="mondiali/italia-away.jpg">🇮🇹 Italia — Away</option>
+              <option value="arg-h"      data-c1="#74acdf" data-c2="#4c8dc4" data-s="#2e6ea6" data-img="mondiali/argentina-home.jpg">🇦🇷 Argentina — Home</option>
+              <option value="bra-h"      data-c1="#009c3b" data-c2="#006e29" data-s="#004a1c" data-img="mondiali/brasile-home.jpg">🇧🇷 Brasile — Home</option>
+              <option value="bra-a"      data-c1="#002776" data-c2="#001550" data-s="#000e35" data-img="mondiali/brasile-away.jpg">🇧🇷 Brasile — Away</option>
+              <option value="fra-h"      data-c1="#002395" data-c2="#001470" data-s="#000d4d" data-img="mondiali/francia-home.jpg">🇫🇷 Francia — Home</option>
+              <option value="spa-h"      data-c1="#c60b1e" data-c2="#8c0815" data-s="#5e050d" data-img="mondiali/spagna-home.jpg">🇪🇸 Spagna — Home</option>
+              <option value="ger-h"      data-c1="#f0f0f0" data-c2="#e0e0e0" data-s="#cccccc" data-img="mondiali/germania-home.jpg">🇩🇪 Germania — Home</option>
+              <option value="por-h"      data-c1="#006600" data-c2="#004400" data-s="#002200" data-img="mondiali/portogallo-home.jpg">🇵🇹 Portogallo — Home</option>
+              <option value="eng-h"      data-c1="#f0f0f0" data-c2="#e8e8e8" data-s="#cccccc" data-img="mondiali/inghilterra-home.jpg">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inghilterra — Home</option>
+              <option value="eng-a"      data-c1="#001f5e" data-c2="#00124a" data-s="#000a30" data-img="mondiali/inghilterra-away.jpg">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inghilterra — Away</option>
+              <option value="usa-h"      data-c1="#002868" data-c2="#001845" data-s="#000f2c" data-img="mondiali/usa-home.jpg">🇺🇸 USA — Home</option>
+              <option value="mar-h"      data-c1="#c1272d" data-c2="#8c0a10" data-s="#600508" data-img="mondiali/marocco-home.jpg">🇲🇦 Marocco — Home</option>
+            </optgroup>
+            <optgroup label="🇮🇹 Serie A 2025/26">
+              <option value="inter-h"    data-c1="#010e80" data-c2="#000960" data-s="#00063f" data-img="seriea/inter-home.jpg">Inter — Home</option>
+              <option value="inter-a"    data-c1="#f0f0f0" data-c2="#e8e8e8" data-s="#cccccc" data-img="seriea/inter-away.jpg">Inter — Away</option>
+              <option value="milan-h"    data-c1="#c8102e" data-c2="#8c0b20" data-s="#600714" data-img="seriea/milan-home.jpg">Milan — Home</option>
+              <option value="juve-h"     data-c1="#111111" data-c2="#222222" data-s="#333333" data-img="seriea/juventus-home.jpg">Juventus — Home</option>
+              <option value="juve-a"     data-c1="#f0d060" data-c2="#c8b200" data-s="#a09000" data-img="seriea/juventus-away.jpg">Juventus — Away</option>
+              <option value="napoli-h"   data-c1="#007fc5" data-c2="#005f93" data-s="#003f63" data-img="seriea/napoli-home.jpg">Napoli — Home</option>
+              <option value="roma-h"     data-c1="#8b0000" data-c2="#620000" data-s="#3a0000" data-img="seriea/roma-home.jpg">Roma — Home</option>
+              <option value="lazio-h"    data-c1="#87ceeb" data-c2="#5bb5d8" data-s="#3a9cba" data-img="seriea/lazio-home.jpg">Lazio — Home</option>
+              <option value="atalanta-h" data-c1="#001f5e" data-c2="#00124a" data-s="#000a30" data-img="seriea/atalanta-home.jpg">Atalanta — Home</option>
+              <option value="fio-h"      data-c1="#4b0082" data-c2="#33005a" data-s="#1a0030" data-img="seriea/fiorentina-home.jpg">Fiorentina — Home</option>
+              <option value="torino-h"   data-c1="#8b1a1a" data-c2="#6b0000" data-s="#4a0000" data-img="seriea/torino-home.jpg">Torino — Home</option>
+            </optgroup>
+            <optgroup label="⭐ Champions / Top Club">
+              <option value="rm-h"       data-c1="#f0f0f0" data-c2="#e8e8e8" data-s="#cccccc" data-img="champions/realmadrid-home.jpg">Real Madrid — Home</option>
+              <option value="rm-a"       data-c1="#800020" data-c2="#5c0018" data-s="#3a0010" data-img="champions/realmadrid-away.jpg">Real Madrid — Away</option>
+              <option value="barca-h"    data-c1="#a50044" data-c2="#750030" data-s="#4a001e" data-img="champions/barcelona-home.jpg">Barcelona — Home</option>
+              <option value="psg-h"      data-c1="#001f5e" data-c2="#00124a" data-s="#000a30" data-img="champions/psg-home.jpg">PSG — Home</option>
+              <option value="city-h"     data-c1="#6cabdd" data-c2="#4a93cc" data-s="#2e7ab8" data-img="champions/mancity-home.jpg">Man City — Home</option>
+              <option value="liv-h"      data-c1="#c8102e" data-c2="#8c0b20" data-s="#600714" data-img="champions/liverpool-home.jpg">Liverpool — Home</option>
+              <option value="ars-h"      data-c1="#ef0107" data-c2="#b50004" data-s="#7a0003" data-img="champions/arsenal-home.jpg">Arsenal — Home</option>
+              <option value="che-h"      data-c1="#034694" data-c2="#022d5e" data-s="#011d3f" data-img="champions/chelsea-home.jpg">Chelsea — Home</option>
+              <option value="bvb-h"      data-c1="#fde100" data-c2="#c8b200" data-s="#9a8900" data-img="bundesliga/dortmund-home.jpg">Borussia Dortmund — Home</option>
+              <option value="bay-h"      data-c1="#dc052d" data-c2="#9e0320" data-s="#6a0215" data-img="bundesliga/bayernmunich-home.jpg">Bayern Monaco — Home</option>
+              <option value="atm-h"      data-c1="#c8102e" data-c2="#8c0b20" data-s="#600714" data-img="laliga/atletico-home.jpg">Atletico Madrid — Home</option>
+              <option value="manu-h"     data-c1="#da291c" data-c2="#a01f14" data-s="#6e150d" data-img="premier/manutd-home.jpg">Man United — Home</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="ctrl-section">
+          <div class="ctrl-label">2 · Il tuo nome</div>
+          <input type="text" id="ctrl-name" maxlength="12" placeholder="Es. ROSSI" oninput="onCustomChange()"/>
+          <div class="input-hint">Max 12 caratteri · verrà stampato in maiuscolo</div>
+        </div>
+
+        <div class="ctrl-section">
+          <div class="ctrl-label">3 · Il tuo numero</div>
+          <div class="number-input-wrap">
+            <button class="num-btn" onclick="changeNum(-1)">−</button>
+            <input type="number" id="ctrl-number" min="1" max="99" value="10" oninput="onCustomChange()"/>
+            <button class="num-btn" onclick="changeNum(1)">+</button>
+          </div>
+        </div>
+
+        <div class="ctrl-section">
+          <div class="ctrl-label">4 · Taglia</div>
+          <div class="size-row">
+            <button class="size-chip" onclick="pickSize(this,'XS')">XS</button>
+            <button class="size-chip" onclick="pickSize(this,'S')">S</button>
+            <button class="size-chip selected" onclick="pickSize(this,'M')">M</button>
+            <button class="size-chip" onclick="pickSize(this,'L')">L</button>
+            <button class="size-chip" onclick="pickSize(this,'XL')">XL</button>
+            <button class="size-chip" onclick="pickSize(this,'XXL')">XXL</button>
+          </div>
+          <a href="#" class="size-guide-link" onclick="return false">Guida alle taglie ↗</a>
+        </div>
+
+        <div class="price-summary">
+          <div class="price-row">
+            <span>Maglia personalizzata</span>
+            <span id="price-main">€ 39,99</span>
+          </div>
+          <div class="price-row muted">
+            <span>Stampa nome + numero</span>
+            <span>Inclusa</span>
+          </div>
+          <div class="price-row muted">
+            <span>Spedizione</span>
+            <span id="price-ship">€ 4,99</span>
+          </div>
+          <div class="price-divider"></div>
+          <div class="price-row total">
+            <span>Totale</span>
+            <span id="price-total">€ 44,98</span>
+          </div>
+        </div>
+
+        <div class="cta-stack">
+          <button class="btn btn-primary btn-lg btn-full" onclick="addToCart()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            Aggiungi al carrello
+          </button>
+          <button class="btn btn-whatsapp btn-lg btn-full" onclick="orderWhatsapp()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Ordina via WhatsApp
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     COME FUNZIONA
+════════════════════════════════════════════ -->
+<section class="steps-section" id="come-funziona">
+  <div class="container">
+    <h2 class="section-title">Come funziona</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        </div>
+        <div class="step-num-badge">01</div>
+        <h3>Scegli la maglia</h3>
+        <p>Oltre 50 squadre tra Mondiali 2026, Serie A, Champions e le principali leghe europee.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </div>
+        <div class="step-num-badge">02</div>
+        <h3>Personalizza</h3>
+        <p>Inserisci il tuo nome e numero preferito. Scegli la taglia. Tutto incluso nel prezzo.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <div class="step-num-badge">03</div>
+        <h3>Paga in sicurezza</h3>
+        <p>PayPal o WhatsApp. Pagamento protetto, nessun rischio. Conferma ordine immediata.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div class="step-num-badge">04</div>
+        <h3>Ricevi a casa</h3>
+        <p>Consegna in 7–12 giorni lavorativi. Spedizione gratuita per ordini superiori a €60.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CARRELLO SIDEBAR
+════════════════════════════════════════════ -->
+<div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+<aside class="cart-sidebar" id="cart-sidebar">
+  <div class="cart-head">
+    <div>
+      <h3>Carrello</h3>
+      <span id="cart-subtitle">0 articoli</span>
+    </div>
+    <button class="cart-close" onclick="toggleCart()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="cart-body" id="cart-body">
+    <div class="cart-empty-state">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <p>Il carrello è vuoto</p>
+    </div>
+  </div>
+  <div class="cart-foot" id="cart-foot" style="display:none">
+    <div class="cart-totals">
+      <div class="cart-tot-row"><span>Subtotale</span><span id="cart-sub">€ 0,00</span></div>
+      <div class="cart-tot-row"><span>Spedizione</span><span id="cart-ship-fee">€ 4,99</span></div>
+      <div class="cart-tot-row grand"><span>Totale</span><strong id="cart-grand">€ 0,00</strong></div>
+    </div>
+    <div id="paypal-button-container"></div>
+    <button class="btn btn-whatsapp btn-full" style="margin-top:10px" onclick="checkoutWhatsapp()">
+      📲 Completa ordine via WhatsApp
+    </button>
+  </div>
+</aside>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="font-size:2rem;margin-bottom:12px">KIT<span>ZONE</span></div>
+        <p>Maglie da calcio personalizzate di alta qualità. Mondiali 2026, Serie A, Champions e le principali leghe europee.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.75a8.16 8.16 0 0 0 4.78 1.52V6.82a4.85 4.85 0 0 1-1.01-.13z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigazione</h4>
+        <ul>
+          <li><a href="#catalogo">Catalogo maglie</a></li>
+          <li><a href="#mondiali">Mondiali 2026</a></li>
+          <li><a href="#personalizza">Personalizzatore</a></li>
+          <li><a href="#come-funziona">Come funziona</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Assistenza</h4>
+        <ul>
+          <li><a href="mailto:info@kitzone.it">info@kitzone.it</a></li>
+          <li><a href="#" onclick="orderWhatsapp();return false">WhatsApp diretto</a></li>
+          <li><a href="#">Tempi di consegna</a></li>
+          <li><a href="#">Resi e rimborsi</a></li>
+          <li><a href="#">Guida alle taglie</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 KitZone · P.IVA 00000000000</span>
+      <span>·</span>
+      <a href="#">Privacy Policy</a>
+      <span>·</span>
+      <a href="#">Termini e Condizioni</a>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=EUR&locale=it_IT"></script>
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
