@@ -106,7 +106,7 @@ const PRODUCTS = [
      🩳 PANTALONCINI MONDIALI 2026
   ══════════════════════════════════ */
   mk('shorts','Pantaloncini · Mondiali','Portogallo','Home','2026','shorts/portugal-home-shorts.jpg','#006600','#004400',29.99),
-  mk('shorts','Pantaloncini · Mondiali','Portogallo','Away','2026','shorts/portugal-away-shorts.jpg','#c60b1e','#8c0815',29.99),
+  mk('shorts','Pantaloncini · Mondiali','Portogallo','Away','2026','shorts/portugal-away-shorts.jpg.png','#c60b1e','#8c0815',29.99),
   mk('shorts','Pantaloncini · Mondiali','Inghilterra','Home','2026','shorts/england-home-shorts.jpg','#f0f0f0','#e0e0e0',29.99),
   mk('shorts','Pantaloncini · Mondiali','Inghilterra','Away','2026','shorts/england-away-shorts.jpg','#001f5e','#00124a',29.99),
   mk('shorts','Pantaloncini · Mondiali','Francia','Home','2026','shorts/france-home-shorts.jpg','#002395','#001470',29.99),
