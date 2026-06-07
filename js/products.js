@@ -118,7 +118,7 @@ const PRODUCTS = [
   mk('shorts','Pantaloncini · Mondiali','Argentina','Away','2026','shorts/argentina-away-shorts.jpg','#001f5e','#00124a',29.99),
   mk('shorts','Pantaloncini · Mondiali','Brasile','Home','2026','shorts/brazil-home-shorts.jpg','#009c3b','#006e29',29.99),
   mk('shorts','Pantaloncini · Mondiali','Brasile','Away','2026','shorts/brazil-away-shorts.jpg','#002776','#001550',29.99),
-  mk('shorts','Pantaloncini · Mondiali','Olanda','Home','2026','shorts/netherlands-home-shorts.jpg','#ff6200','#c44a00',29.99),
+  mk('shorts','Pantaloncini · Mondiali','Olanda','Home','2026','shorts/netherlands-home-shorts.jpg.png','#ff6200','#c44a00',29.99),
   mk('shorts','Pantaloncini · Mondiali','Olanda','Away','2026','shorts/netherlands-away-shorts.jpg','#001f5e','#00124a',29.99),
   mk('shorts','Pantaloncini · Mondiali','Messico','Away','2026','shorts/mexico-away-shorts.jpg','#111111','#222222',29.99),
   mk('shorts','Pantaloncini · Mondiali','Belgio','Away','2026','shorts/belgium-away-shorts.jpg','#c60b1e','#8c0815',29.99),
